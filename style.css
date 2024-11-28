@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+#calculator{ /*# symbol means this is an id attached to a divide tag in html file*/
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*fr means fractional unit; 1fr means each takes up same amt of space*/
+    gap: 10px;
+    padding: 25px;
+}
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{ /*when we hover over a button, it will light up*/
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{ /*when we click on a button, it will flash*/
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{ /*all elements with this class attribute have this background color*/
+    background-color: hsl(35, 100%, 55%);
+}
+.operator-btn:hover{/*all elements with this class attribute will get brighter when you hover over it*/
+    background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{/*all elements with this class attribute will flash when you click on it*/
+    background-color: hsl(35, 100%, 75%);
+}
